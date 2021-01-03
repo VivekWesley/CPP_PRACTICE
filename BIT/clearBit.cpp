@@ -1,4 +1,6 @@
+// DATE: DEC 29 2020
 // clear a bit at given pos.
+// ___________________________________________
 
 // sample output:
 // 2
