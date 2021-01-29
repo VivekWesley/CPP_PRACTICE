@@ -165,7 +165,7 @@ int countPath(int s, int e)
 
     int count = 0;
 
-    for (int i = 1; i < 6; i++)
+    for (int i = 1; i <= 6; i++)
     {
         count += countPath(s + i, e);
     }
