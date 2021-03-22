@@ -208,6 +208,45 @@
 // }
 
 // #5
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     int ans = 2;
+//     int current = 2;
+//     int i = 2;
+//     int pd = arr[1] - arr[0];
+
+//     while (i < n)
+//     {
+//         if (pd == arr[i] - arr[i - 1])
+//         {
+//             current++;
+//         }
+//         else
+//         {
+//             pd = arr[i] - arr[i - 1];
+//             current = 2;
+//         }
+//         ans = max(ans, current);
+//         i++;
+//     }
+//     cout << ans << endl;
+//     return 0;
+// }
+
+// #6
 #include <iostream>
 using namespace std;
 
@@ -218,16 +257,18 @@ int main()
     cin >> n;
     int arr[n];
     cout << "enter array elements: " << endl;
+
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
 
-    int ans = 2;
-    int current = 2;
     int i = 2;
+    int current = 2;
+    int ans = 2;
     int pd = arr[1] - arr[0];
 
+    cout << "output: " << endl;
     while (i < n)
     {
         if (pd == arr[i] - arr[i - 1])
