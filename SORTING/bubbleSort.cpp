@@ -157,6 +157,101 @@
 // }
 
 // #3
+// #include <iostream>
+// using namespace std;
+
+// int bubbleSort(int arr[], int n)
+// {
+//     int counter = 1;
+//     while (counter < n)
+//     {
+//         for (int i = 0; i < n; i++)
+//         {
+//             if (arr[i] > arr[i + 1])
+//             {
+//                 int temp = arr[i];
+//                 arr[i] = arr[i + 1];
+//                 arr[i + 1] = temp;
+//             }
+//         }
+//         counter++;
+//     }
+//     return arr[n];
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+//     int arr[n];
+
+//     cout << "enter array elements: " << endl;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     bubbleSort(arr, n);
+
+//     cout << "sorted array: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// #4
+// #include <iostream>
+// using namespace std;
+
+// int bubbleSort(int arr[], int n)
+// {
+//     int counter = 1;
+//     while (counter < n)
+//     {
+//         for (int i = 0; i < n; i++)
+//         {
+//             if (arr[i] > arr[i + 1])
+//             {
+//                 int temp = arr[i];
+//                 arr[i] = arr[i + 1];
+//                 arr[i + 1] = temp;
+//             }
+//         }
+//         counter++;
+//     }
+//     return arr[n];
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+//     int arr[n];
+
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     bubbleSort(arr, n);
+//     cout << "sorted array: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+// #5
 #include <iostream>
 using namespace std;
 
@@ -185,9 +280,7 @@ int main()
     cout << "enter array size: " << endl;
     cin >> n;
     int arr[n];
-
     cout << "enter array elements: " << endl;
-
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -201,6 +294,5 @@ int main()
         cout << arr[i] << " ";
     }
     cout << endl;
-
     return 0;
 }
