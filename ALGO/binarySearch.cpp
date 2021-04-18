@@ -1,3 +1,5 @@
+// DATE: APR 18 2K21
+// _____________________________________________________________
 // binary search
 
 // sample output:
@@ -9,6 +11,7 @@
 // 44
 // element found at index: 3
 
+// ______________________________________________________________
 // #1
 // #include <iostream>
 // using namespace std;
@@ -104,11 +107,61 @@
 //     return 0;
 // }
 
-// #3
+// // #3
+// #include <iostream>
+// using namespace std;
+
+// int binarySearch(int arr[], int n, int target)
+// {
+//     int L = 0;
+//     int R = n - 1;
+
+//     while (L <= R)
+//     {
+//         int mid = L + (R - L) / 2;
+//         if (arr[mid] == target)
+//         {
+//             return mid;
+//         }
+//         else if (target < arr[mid])
+//         {
+//             R = mid - 1;
+//         }
+//         else
+//         {
+//             L = mid + 1;
+//         }
+//     }
+//     return -1;
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     int target;
+//     cout << "enter target element: " << endl;
+//     cin >> target;
+
+//     cout << target + " is found at INDEX: " << binarySearch(arr, n, target) << endl;
+
+//     return 0;
+// }
+
+// #4
 #include <iostream>
 using namespace std;
 
-int binarySearch(int arr[], int n, int target)
+int binary_search(int arr[], int n, int target)
 {
     int L = 0;
     int R = n - 1;
@@ -116,6 +169,7 @@ int binarySearch(int arr[], int n, int target)
     while (L <= R)
     {
         int mid = L + (R - L) / 2;
+
         if (arr[mid] == target)
         {
             return mid;
@@ -146,10 +200,10 @@ int main()
     }
 
     int target;
-    cout << "enter target element: " << endl;
+    cout << "enter target elements: " << endl;
     cin >> target;
 
-    cout << target + " is found at INDEX: " << binarySearch(arr, n, target) << endl;
+    cout << target + "IS FOUND AT POSITION: " << binary_search(arr, n, target) << endl;
 
     return 0;
 }
