@@ -69,30 +69,60 @@
 // }
 
 // #2
+// #include <iostream>
+// using namespace std;
+
+// int generateFib(int n)
+// {
+//     int t1 = 0;
+//     int t2 = 1;
+//     int nextTerm = 0;
+
+//     for (int i = 1; i < n; i++)
+//     {
+//         cout << t1 << " ";
+//         nextTerm = t1 + t2;
+//         t1 = t2;
+//         t2 = nextTerm;
+//     }
+//     return 0;
+// }
+// int main()
+// {
+//     int n;
+//     cout << "enter n value: " << endl;
+//     cin >> n;
+
+//     generateFib(n);
+//     return 0;
+// }
+
+// #3
 #include <iostream>
 using namespace std;
 
-int generateFib(int n)
+void generateFib(int n)
 {
     int t1 = 0;
     int t2 = 1;
     int nextTerm = 0;
 
-    for (int i = 1; i < n; i++)
+    cout << n << " Fibonacci sequence is: " << endl;
+    for (int i = 1; i <= n; i++)
     {
         cout << t1 << " ";
         nextTerm = t1 + t2;
         t1 = t2;
         t2 = nextTerm;
     }
-    return 0;
+    return;
 }
+
 int main()
 {
     int n;
     cout << "enter n value: " << endl;
     cin >> n;
-
     generateFib(n);
     return 0;
 }
