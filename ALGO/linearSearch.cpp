@@ -46,10 +46,47 @@
 // }
 
 // #1
+// #include <iostream>
+// using namespace std;
+
+// int linearSerach(int arr[], int n, int target)
+// {
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] == target)
+//         {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     int target;
+//     cout << "enter target element: " << endl;
+//     cin >> target;
+
+//     cout << target + "IS FOUND AT POSITION: " << linearSerach(arr, n, target) << endl;
+//     return 0;
+// }
+
+// #2
 #include <iostream>
 using namespace std;
 
-int linearSerach(int arr[], int n, int target)
+int linearSearch(int arr[], int n, int target)
 {
     for (int i = 0; i < n; i++)
     {
@@ -78,6 +115,6 @@ int main()
     cout << "enter target element: " << endl;
     cin >> target;
 
-    cout << target + "IS FOUND AT POSITION: " << linearSerach(arr, n, target) << endl;
+    cout << target << " element is found at POSITION: " << linearSearch(arr, n, target) << endl;
     return 0;
 }
