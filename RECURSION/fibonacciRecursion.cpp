@@ -7,7 +7,7 @@
 // 6
 // ans: 8
 
-// #1
+// // #1
 // #include <iostream>
 // using namespace std;
 
@@ -30,7 +30,7 @@
 //     return 0;
 // }
 
-// #2
+// // #2
 // #include <iostream>
 // using namespace std;
 
@@ -53,7 +53,7 @@
 //     return 0;
 // }
 
-// #3
+// // #3
 // #include <iostream>
 // using namespace std;
 
@@ -75,7 +75,7 @@
 //     return 0;
 // }
 
-// #4
+// // #4
 // #include <iostream>
 // using namespace std;
 
@@ -99,25 +99,50 @@
 //     return 0;
 // }
 
-// #5
+// // #5
+// #include <iostream>
+// using namespace std;
+
+// int fib(int n)
+// {
+//     if (n == 0 || n == 1)
+//     {
+//         return n;
+//     }
+//     return fib(n - 1) + fib(n - 2);
+// }
+// int main()
+// {
+//     int n;
+//     cout << "enter a number: " << endl;
+//     cin >> n;
+
+//     cout << "ans: " << fib(n) << endl;
+
+//     return 0;
+// }
+
+// #6
 #include <iostream>
+
 using namespace std;
 
-int fib(int n)
+int genFib(int n)
 {
     if (n == 0 || n == 1)
     {
         return n;
     }
-    return fib(n - 1) + fib(n - 2);
+    return genFib(n - 1) + genFib(n - 2);
 }
+
 int main()
 {
     int n;
-    cout << "enter a number: " << endl;
+    cout << "enter n value: " << endl;
     cin >> n;
 
-    cout << "ans: " << fib(n) << endl;
+    cout << "result: " << genFib(n);
 
     return 0;
 }
