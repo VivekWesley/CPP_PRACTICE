@@ -2,7 +2,7 @@
 //_________________________________________________________________________
 // Linked List
 // sample output:
-
+// 1->2->3->NULL
 // ________________________________________________________________________
 
 // #include <iostream>
@@ -121,6 +121,63 @@
 // }
 
 // #2
+// #include <iostream>
+// using namespace std;
+
+// class node
+// {
+// public:
+//     int data;
+//     node *next;
+
+//     node(int val)
+//     {
+//         data = val;
+//         next = NULL;
+//     }
+// };
+
+// void insertAtTail(node *&head, int val)
+// {
+//     node *n = new node(val);
+
+//     if (head == NULL)
+//     {
+//         head = n;
+//         return;
+//     }
+//     node *temp = head;
+//     while (temp->next != NULL)
+//     {
+//         temp = temp->next;
+//     }
+//     temp->next = n;
+// }
+
+// void display(node *head)
+// {
+//     node *temp = head;
+//     while (temp != NULL)
+//     {
+//         cout << temp->data << " -> ";
+//         temp = temp->next;
+//     }
+//     cout << "NULL" << endl;
+// }
+
+// int main()
+// {
+//     node *head = NULL;
+//     insertAtTail(head, 1);
+//     insertAtTail(head, 6);
+//     insertAtTail(head, 9);
+//     insertAtTail(head, 2);
+
+//     display(head);
+//     return 0;
+// }
+
+// #3
 #include <iostream>
 using namespace std;
 
@@ -146,6 +203,7 @@ void insertAtTail(node *&head, int val)
         head = n;
         return;
     }
+
     node *temp = head;
     while (temp->next != NULL)
     {
@@ -157,9 +215,9 @@ void insertAtTail(node *&head, int val)
 void display(node *head)
 {
     node *temp = head;
-    while (temp != NULL)
+    while (temp->next != NULL)
     {
-        cout << temp->data << " -> ";
+        cout << temp->data << "->";
         temp = temp->next;
     }
     cout << "NULL" << endl;
@@ -169,10 +227,11 @@ int main()
 {
     node *head = NULL;
     insertAtTail(head, 1);
-    insertAtTail(head, 6);
-    insertAtTail(head, 9);
     insertAtTail(head, 2);
+    insertAtTail(head, 3);
+    insertAtTail(head, 4);
 
     display(head);
+
     return 0;
 }
