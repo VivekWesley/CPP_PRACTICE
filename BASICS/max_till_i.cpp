@@ -67,15 +67,43 @@
 // }
 
 // #2
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size:" << endl;
+//     cin >> n;
+
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     int mx = -1999999;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         mx = max(mx, arr[i]);
+//         cout << mx << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// #3
 #include <iostream>
 using namespace std;
 
 int main()
 {
     int n;
-    cout << "enter array size:" << endl;
+    cout << "enter array size: " << endl;
     cin >> n;
-
     int arr[n];
     cout << "enter array elements: " << endl;
     for (int i = 0; i < n; i++)
@@ -83,7 +111,7 @@ int main()
         cin >> arr[i];
     }
 
-    int mx = -1999999;
+    int mx = -199999999;
 
     for (int i = 0; i < n; i++)
     {
