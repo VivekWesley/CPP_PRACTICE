@@ -1,5 +1,4 @@
-// DATE: MAR 20 2K21
-// print sum of each subarray of the given array
+// sum of all subarrays
 
 // sample output:
 // enter array size:
@@ -12,7 +11,6 @@
 // 2
 // 4
 // 2
-// __________________________________________________________________________________________
 
 // #include <iostream>
 // using namespace std;
@@ -160,6 +158,34 @@
 // }
 
 // #5
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         int currentSum = 0;
+//         for (int j = i; j < n; j++)
+//         {
+//             currentSum = currentSum + arr[j];
+//             cout << currentSum << endl;
+//         }
+//     }
+//     return 0;
+// }
+
+// #6
 #include <iostream>
 using namespace std;
 
@@ -167,22 +193,28 @@ int main()
 {
     int n;
     cout << "enter array size: " << endl;
+
     cin >> n;
     int arr[n];
+
     cout << "enter array elements: " << endl;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
 
+    cout << "sum of each subarray: " << endl;
+
     for (int i = 0; i < n; i++)
     {
-        int currentSum = 0;
+        int currSum = 0;
         for (int j = i; j < n; j++)
         {
-            currentSum = currentSum + arr[j];
-            cout << currentSum << endl;
+            currSum += arr[j];
+            cout << currSum << " ";
         }
     }
+    cout << endl;
+
     return 0;
 }
