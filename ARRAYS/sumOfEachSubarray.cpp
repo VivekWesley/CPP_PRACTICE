@@ -220,11 +220,45 @@
 // }
 
 // #7
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     cout << "SUM of ALL sub ARRAY: " << endl;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         int currentSum = 0;
+//         for (int j = i; j < n; j++)
+//         {
+//             currentSum += arr[j];
+//             cout << currentSum << " ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #8
 #include <iostream>
 using namespace std;
 
 int main()
 {
+
     int n;
     cout << "enter array size: " << endl;
     cin >> n;
@@ -236,16 +270,17 @@ int main()
         cin >> arr[i];
     }
 
-    cout << "SUM of ALL sub ARRAY: " << endl;
-
+    cout << "sum of all sub array: " << endl;
     for (int i = 0; i < n; i++)
     {
         int currentSum = 0;
         for (int j = i; j < n; j++)
         {
+            cout << currentSum << "+" << arr[j] << "=>";
             currentSum += arr[j];
-            cout << currentSum << " ";
+            cout << "[" << currentSum << "] ";
         }
+        cout << endl;
         cout << endl;
     }
 
