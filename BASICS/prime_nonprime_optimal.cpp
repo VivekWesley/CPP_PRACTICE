@@ -246,6 +246,78 @@
 
 // #8
 
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// bool isPrime(int n)
+// {
+//     bool flag = 0;
+//     for (int i = 2; i < sqrt(n); i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             flag = 1;
+//             return flag;
+//         }
+//     }
+
+//     return flag;
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter a number: " << endl;
+//     cin >> n;
+
+//     bool flag = isPrime(n);
+//     if (flag == 0)
+//     {
+//         cout << n << " is a prime number" << endl;
+//     }
+//     else
+//     {
+//         cout << n << " is Not a PRIME number" << endl;
+//     }
+
+//     return 0;
+// }
+
+// #9
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// bool isPrime(int n)
+// {
+//     bool flag = 0;
+//     for (int i = 2; i < sqrt(n); i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             flag = 1;
+//             break;
+//         }
+//     }
+//     return flag;
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter a number: " << endl;
+//     cin >> n;
+
+//     if (isPrime(n) == 0)
+//         cout << n << " is a prime number" << endl;
+//     else
+//         cout << n << " is not a prime number" << endl;
+
+//     return 0;
+// }
+
+// #10
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -253,7 +325,7 @@ using namespace std;
 bool isPrime(int n)
 {
     bool flag = 0;
-    for (int i = 2; i < sqrt(n); i++)
+    for (int i = 2; i <= sqrt(n); i++)
     {
         if (n % i == 0)
         {
@@ -261,7 +333,6 @@ bool isPrime(int n)
             return flag;
         }
     }
-
     return flag;
 }
 
@@ -270,15 +341,15 @@ int main()
     int n;
     cout << "enter a number: " << endl;
     cin >> n;
-
     bool flag = isPrime(n);
+
     if (flag == 0)
     {
-        cout << n << " is a prime number" << endl;
+        cout << n << " is a PRIME number" << endl;
     }
     else
     {
-        cout << n << " is Not a PRIME number" << endl;
+        cout << n << " is NOT A PRIME number" << endl;
     }
 
     return 0;
