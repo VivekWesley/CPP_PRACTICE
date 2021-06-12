@@ -81,7 +81,7 @@
 //         counter++;
 //     }
 
-//     cout << "sorted array: " << endl;
+//     cout << "SORTED ARR: " << endl;
 
 //     for (int i = 0; i < n; i++)
 //     {
@@ -92,7 +92,6 @@
 // }
 
 // #2
-
 #include <iostream>
 using namespace std;
 

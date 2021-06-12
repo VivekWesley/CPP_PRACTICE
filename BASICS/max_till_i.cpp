@@ -96,29 +96,63 @@
 // }
 
 // #3
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     int mx = -199999999;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         mx = max(mx, arr[i]);
+//         cout << mx << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// #4
 #include <iostream>
 using namespace std;
 
-int main()
+void maxTilli(int arr[], int n)
 {
-    int n;
-    cout << "enter array size: " << endl;
-    cin >> n;
-    int arr[n];
-    cout << "enter array elements: " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
-
-    int mx = -199999999;
-
+    int mx = -1999999;
     for (int i = 0; i < n; i++)
     {
         mx = max(mx, arr[i]);
         cout << mx << " ";
     }
     cout << endl;
+}
+
+int main()
+{
+    int n;
+    cout << "enter array size: " << endl;
+    cin >> n;
+
+    int arr[n];
+    cout << "enter array elements: " << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    maxTilli(arr, n);
 
     return 0;
 }

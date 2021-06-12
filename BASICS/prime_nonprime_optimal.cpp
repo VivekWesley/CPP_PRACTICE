@@ -318,6 +318,44 @@
 // }
 
 // #10
+// #include <iostream>
+// #include <cmath>
+// using namespace std;
+
+// bool isPrime(int n)
+// {
+//     bool flag = 0;
+//     for (int i = 2; i <= sqrt(n); i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             flag = 1;
+//             return flag;
+//         }
+//     }
+//     return flag;
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter a number: " << endl;
+//     cin >> n;
+//     bool flag = isPrime(n);
+
+//     if (flag == 0)
+//     {
+//         cout << n << " is a PRIME number" << endl;
+//     }
+//     else
+//     {
+//         cout << n << " is NOT A PRIME number" << endl;
+//     }
+
+//     return 0;
+// }
+
+// #11
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -339,17 +377,16 @@ bool isPrime(int n)
 int main()
 {
     int n;
-    cout << "enter a number: " << endl;
+    cout << "enter a number:" << endl;
     cin >> n;
-    bool flag = isPrime(n);
 
-    if (flag == 0)
+    if (isPrime(n) == 0)
     {
-        cout << n << " is a PRIME number" << endl;
+        cout << n << " is a prime number" << endl;
     }
     else
     {
-        cout << n << " is NOT A PRIME number" << endl;
+        cout << n << " is not a prime number" << endl;
     }
 
     return 0;
