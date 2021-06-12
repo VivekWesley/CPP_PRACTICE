@@ -207,12 +207,56 @@
 // }
 
 // #5
+// #include <iostream>
+// using namespace std;
+
+// int selectionSort(int arr[], int n)
+// {
+//     for (int i = 0; i < n - 1; i++)
+//     {
+//         for (int j = i + 1; j < n; j++)
+//         {
+//             if (arr[j] < arr[i])
+//             {
+//                 int temp = arr[j];
+//                 arr[j] = arr[i];
+//                 arr[i] = temp;
+//             }
+//         }
+//     }
+//     return arr[n];
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "enter array size: " << endl;
+//     cin >> n;
+
+//     int arr[n];
+//     cout << "enter array elements: " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     selectionSort(arr, n);
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+
+//     return 0;
+// }
+
+// #6
 #include <iostream>
 using namespace std;
 
-int selectionSort(int arr[], int n)
+void selectionSort(int arr[], int n)
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
@@ -224,7 +268,6 @@ int selectionSort(int arr[], int n)
             }
         }
     }
-    return arr[n];
 }
 
 int main()
@@ -232,8 +275,8 @@ int main()
     int n;
     cout << "enter array size: " << endl;
     cin >> n;
-
     int arr[n];
+
     cout << "enter array elements: " << endl;
     for (int i = 0; i < n; i++)
     {
@@ -242,6 +285,7 @@ int main()
 
     selectionSort(arr, n);
 
+    cout << "Sorted array: " << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
@@ -249,4 +293,3 @@ int main()
 
     return 0;
 }
-
