@@ -179,7 +179,6 @@ int main()
     int n;
     cout << "enter array size: " << endl;
     cin >> n;
-
     int arr[n];
 
     cout << "enter array elements: " << endl;
