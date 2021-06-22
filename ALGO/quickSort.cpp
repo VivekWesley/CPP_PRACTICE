@@ -366,7 +366,8 @@ int main()
     cout << "enter array size: " << endl;
     cin >> n;
     int arr[n];
-    cout << "enter array elements: " << endl;
+  
+    cout << "enter array elements:" << endl;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -374,8 +375,7 @@ int main()
 
     quickSort(arr, 0, n - 1);
 
-    cout << "sorted array:: " << endl;
-
+    cout << "sorted array: " << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
