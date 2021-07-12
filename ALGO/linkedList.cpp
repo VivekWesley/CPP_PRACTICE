@@ -2085,11 +2085,72 @@
 // }
 
 // #34
+// #include <iostream>
+// using namespace std;
+
+// class node
+// {
+// public:
+//     int data;
+//     node *next;
+
+//     node(int val)
+//     {
+//         data = val;
+//         next = NULL;
+//     }
+// };
+
+// void insertAtTail(node *&head, int val)
+// {
+//     node *n = new node(val);
+
+//     if (head == NULL)
+//     {
+//         head = n;
+//         return;
+//     }
+//     node *temp = head;
+//     while (temp->next != NULL)
+//     {
+//         temp = temp->next;
+//     }
+//     temp->next = n;
+// }
+
+// void display(node *head)
+// {
+//     node *temp = head;
+
+//     while (temp != NULL)
+//     {
+//         cout << temp->data << "->";
+//         temp = temp->next;
+//     }
+//     cout << "NULL" << endl;
+// }
+// int main()
+// {
+//     node *head = NULL;
+
+//     insertAtTail(head, 43);
+//     insertAtTail(head, 44);
+//     insertAtTail(head, 98);
+//     insertAtTail(head, 90);
+//     insertAtTail(head, 3333);
+
+//     display(head);
+
+//     return 0;
+// }
+
+// #35
 #include <iostream>
 using namespace std;
 
 class node
 {
+
 public:
     int data;
     node *next;
@@ -2110,7 +2171,9 @@ void insertAtTail(node *&head, int val)
         head = n;
         return;
     }
+
     node *temp = head;
+
     while (temp->next != NULL)
     {
         temp = temp->next;
@@ -2127,17 +2190,18 @@ void display(node *head)
         cout << temp->data << "->";
         temp = temp->next;
     }
-    cout << "NULL" << endl;
+    cout << "NULL";
 }
+
 int main()
 {
     node *head = NULL;
 
-    insertAtTail(head, 43);
-    insertAtTail(head, 44);
-    insertAtTail(head, 98);
+    insertAtTail(head, 3);
+    insertAtTail(head, 10);
+    insertAtTail(head, 32);
+    insertAtTail(head, 64);
     insertAtTail(head, 90);
-    insertAtTail(head, 3333);
 
     display(head);
 
